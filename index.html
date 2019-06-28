@@ -1,160 +1,451 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+		<title>Intelligent Systems Security Lab - CS - UDayton</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Security Research Lab" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-    <title>Cyber Security Lab at University of Dayto</title>
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="http://academic.udayton.edu/phuphung/css/bootstrap.min.css" rel="stylesheet">
+	<!-- css files -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="css/modal.css" rel='stylesheet' type='text/css' /><!-- for modal-->
+    <link href="css/fontawesome-all.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
 
-    <!-- Custom CSS -->
-    <link href="http://academic.udayton.edu/phuphung/css/blog-home.css" rel="stylesheet">
-
-    <link href="http://academic.udayton.edu/phuphung/css/blog.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&amp;subset=devanagari,latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
 
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Cyber Security Lab</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#research">Research</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#publications">Publications</a>
-                    </li>
-                    <li>
-                        <a href="#people">People</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-
-            <!-- Blog Entries Column -->
-            <div class="col-md-8">
-
-                <!--h1 class="page-header">
-                    About
-                </h1-->
-
-                <!-- First Blog Post -->
-                <img src="http://academic.udayton.edu/phuphung/lab/security.png" align="center" width="600"/><br>
-                The Cyber Security Research Lab is housed in the Department of Computer Science, University of Dayton. The Lab was founded in August 2015, and directed by <a href="http://academic.udayton.edu/PhuPhung">Prof. Phu Phung</a>. 
-                <br>
-                <br>
-               
+<!-- header -->
+<header class="bg-white py-1">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<h2>
+				<a class="navbar-brand" href="#">Intelligent Systems Security Lab</a>
+			</h2>
+			<div>
 
 
-            </div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
 
-            <!-- Blog Sidebar Widgets Column -->
-            <!--div class="col-md-4"-->
-            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">   
-                <!-- Side Widget Well -->
-                <div id="contact">
-                    <h4 >Contact Information</h4>
-                    <p>
-            <blockquote><small>
-                     Cyber Security Lab<br>
-                     Anderson 135 <br>
-                     Department of Computer Science<br>
-            University of Dayton<br>
-            300 College Park Ave<br>
-            Dayton, OH 45469 <br>
-            <b>Email:</b> phu@udayton(dot)edu<br>
-            <b>Phone:</b> +1 937 229 3831&nbsp;<br></small>
-            </blockquote>
-        </p>
-                </div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-lg-4 mr-auto">
+					<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+					<a class="nav-link" href="#research">Research<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+					<a class="nav-link" href="#people">People <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+					<a class="nav-link" href="#contact">Contact <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				
+			</div>
+		</nav>
+	</div>
+</header>
+<!-- //header -->
+<!-- banner -->
+<section class="banner">
+	<div class="container">
+		<div class="row banner-grids">
+			<div class="col-lg-6 banner-info">
+				<h4 class="mb-3">The Intelligent Systems Security Lab</h4>
+				<p class="mb-4">is housed the Department of Computer Science, University of Dayton, in Anderson 135. The lab was founded in August 2015, and directed by Dr. Phu H. Phung. We are always looking for highly-motivated students interested in doing research in computer security, please click on the link below for the details.</p>
+				<a href="#open">Open positions</a> <a href="#research">Research directions</a>
+			</div>
+			<div class="col-lg-6 col-md-9 banner-image">
+				<img src="images/security_icon.png" alt="" class="img-fluid"/>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //banner -->
+<!-- faq -->
+<a id="research"></a>
+<section class="faq py-5">
+	
+	<div class="container py-md-3">
+		<div class="heading">
+			<h3 class="head text-left">Research</h3>
+			<p class="my-3  text-Left">The lab research directions focus on language-based security techniques for protecting intelligent systems from potential untrusted code such as third-party components. We leverage and adopt the reference monitors mechanism from programming languages and compilers to enforce fine-grained policies on the open systems such as the Web, mobile applications, and the Internet of Things infrastructure to detect and prevent defeat potential malicious behaviors. 
+			</p>
+			<h4 class="head text-left">Current projects</h4>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										User-centric policy enforcement for the Web.
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in collapse show" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<p>We aim to provide end-users friendly tools to monitor the Web to ensure that it does not compromise the security and privacy of users.
+									</p>
+									Current publications: <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">TDSC'2015 <i class="fas fa-sign-in-alt"></i></a>, <a href="https://dl.acm.org/citation.cfm?id=1533067">ASIACSS'2009 <i class="fas fa-sign-in-alt"></i></a>. 
+								</div>
+							</div>
+						</div> <!-- pannel-->
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Web-based mobile apps security
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+								<p>We are working on novel policy enforcementframework for hybrid mobile apps to enforce useful security and usage policies, specified by the developers and can be customized by the users.</p>
+								Current publications: <a href="https://ecommons.udayton.edu/cps_fac_pub/138/">MoST'2017 <i class="fas fa-sign-in-alt"></i></a>.
+								</div>
+							</div>
+						</div><!-- pannel-->
 
-            </div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Security and Usage Control for the Internet of Things
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+								<p>	We are developing generic policy frameworks for instrumentation and assurance of various types of execution policies for IoT services.	
+								</p>
+								Current publications: <a href="https://dl.acm.org/citation.cfm?id=3277602">IoT'2018 <i class="fas fa-sign-in-alt"></i></a>, <a href="https://dl.acm.org/citation.cfm?id=3277602"> ICIOT'2017 <i class="fas fa-sign-in-alt"></i></a>.
+								</div>
+							</div>
+						</div><!-- pannel-->
 
-        </div>
-        <!-- /.row -->
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingMore">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMore" aria-expanded="false" aria-controls="collapseMore"> More ...</a>
+								</h4>
+							</div>
+							<div id="collapseMore" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingMore">
+								<div class="panel-body">
+								<p>	More projects will come</p>
+								</div>
+							</div>
+						</div><!-- pannel-->
 
-        <hr>
+					</div>
+				</div><!--- END COL -->
+			</div><!--- END ROW -->
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Phu H. Phung 2015
-                        <a href="http://www3.clustrmaps.com/counter/maps.php?url=http://academic.udayton.edu/PhuPhung/" id="clustrMapsLink"><img src="http://www3.clustrmaps.com/counter/index2.php?url=http://academic.udayton.edu/PhuPhung/" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" width="20"/>
-</a>
-<script type="text/javascript">
-function cantload() {
-img = document.getElementById("clustrMapsImg");
-img.onerror = null;
-img.src = "http://www2.clustrmaps.com/images/clustrmaps-back-soon.jpg";
-document.getElementById("clustrMapsLink").href = "http://www2.clustrmaps.com";
-}
-img = document.getElementById("clustrMapsImg");
-img.onerror = cantload;
-</script>
-                    </p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-        </footer>
+			<h4 class="head text-left">Recent publications</h4>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingPub2018">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsePub2018" aria-expanded="true" aria-controls="collapsePub2018">
+										2018
+									</a>
+								</h4>
+							</div>
+							<div id="collapsePub2018" class="panel-collapse collapse in collapse show" role="tabpanel" aria-labelledby="headingPub2018">
+									<div class="panel-body">
+											<ul class="list-group">
+												<li class="list-group-item">A Security Policy Enforcement Framework for Controlling IoT Tenant Applications in the Edge <a href="https://dl.acm.org/citation.cfm?id=3277602"> <i class="fas fa-sign-in-alt"></i></a>, <a href="https://iot-conference.org/iot2018">IoT'2018</a>.</li>
+												<li class="list-group-item">An Airfare Prediction Model for Developing Markets <a href="https://ieeexplore.ieee.org/abstract/document/8343221"> <i class="fas fa-sign-in-alt"></i></a>, <a href="https://ieeexplore.ieee.org/xpl/conhome/8337483/proceeding"> ICOIN'2018</a>.</li>
+											</ul>
+								</div>
+							</div>
+						</div> <!-- pannel-->
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingPub2017">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsePub2017" aria-expanded="false" aria-controls="collapsePub2017"> 2017
+									</a>
+								</h4>
+							</div>
+							<div id="collapsePub2017" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPub2017">
+								<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item">HybridGuard: A Principal-based Permission and Fine-Grained Policy Enforcement Framework for Web-based Mobile Applications <a href="https://ecommons.udayton.edu/cps_fac_pub/138/"><i class="fas fa-sign-in-alt"></i></a>, <a href="http://www.ieee-security.org/TC/SPW2017/MoST/">MoST'2017</a>.</li>
+								
+									<li class="list-group-item">P4SINC–An Execution Policy Framework for IoT Services in the Edge <a href="https://ecommons.udayton.edu/cps_fac_pub/137/"><i class="fas fa-sign-in-alt"></i></a>, <a href="https://ieeexplore.ieee.org/xpl/conhome/8038295/proceeding">ICIOT'2017</a>.</li>
 
-    </div>
-    <!-- /.container -->
+									<li class="list-group-item">A Reliable and Efficient Wireless Sensor Network System for Water Quality Monitoring <a href="https://ecommons.udayton.edu/cps_fac_pub/136/"><i class="fas fa-sign-in-alt"></i></a>, <a href="https://ieeexplore.ieee.org/xpl/conhome/8113742/proceeding">IE'2017</a>.</li>
 
-    <!-- jQuery -->
-    <script src="http://academic.udayton.edu/phuphung/js/jquery.js"></script>
+									<li class="list-group-item">Toward An IoT-based Expert System for Heart Disease Diagnosis <a href="http://ceur-ws.org/Vol-1964/PU3.pdf"><i class="fas fa-sign-in-alt"></i></a>, <a href="http://ceur-ws.org/Vol-1964/">MAICS'2017</a>.</li>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="http://academic.udayton.edu/phuphung/js/bootstrap.min.js"></script>
+								</ul>
+								</div>
+							</div>
+						</div><!-- pannel-->
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingPub2016">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsePub2016" aria-expanded="false" aria-controls="collapsePub2016"> 2016
+									</a>
+								</h4>
+							</div>
+							<div id="collapsePub2016" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPub2016">
+								<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item">DASSR: A Distributed Authentication Scheme for Secure Routing in Wireless Ad-hoc Networks <a href="https://ecommons.udayton.edu/cps_fac_pub/140/"><i class="fas fa-sign-in-alt"></i></a>, <a href="https://link.springer.com/book/10.1007/978-3-319-48057-2">FDSE'2016</a>.</li>
+								
+									<li class="list-group-item">(Best paper award!) Leveraging Static Analysis Tools for Improving Usability of Memory Error Sanitization Compilers <a href="https://ecommons.udayton.edu/cps_fac_pub/141/"><i class="fas fa-sign-in-alt"></i></a>, <a href="https://ieeexplore.ieee.org/xpl/conhome/7588292/proceeding">QRS'2016</a>.</li>
+
+								</ul>
+								</div>
+							</div>
+						</div><!-- pannel-->
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingPub2015">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsePub2015" aria-expanded="false" aria-controls="collapsePub2015"> 2015
+									</a>
+								</h4>
+							</div>
+							<div id="collapsePub2015" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPub2015">
+								<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item">Between Worlds: Securing Mixed JavaScript/ActionScript Multi-party Web Content <a href="https://ecommons.udayton.edu/cps_fac_pub/135/"><i class="fas fa-sign-in-alt"></i></a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">TDSC'2015</a>.</li>
+								
+									<li class="list-group-item">From Verification to Optimizations <a href="https://ecommons.udayton.edu/cps_fac_pub/142/"><i class="fas fa-sign-in-alt"></i></a>, <a href="https://link.springer.com/book/10.1007/978-3-662-46081-8">VMCAI'2015</a>.</li>
+
+								</ul>
+								</div>
+							</div>
+						</div><!-- pannel-->
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingPubMore">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsePubMore" aria-expanded="false" aria-controls="collapsePubMore"> More ...
+									</a>
+								</h4>
+							</div>
+							<div id="collapsePubMore" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPubMore">
+								<div class="panel-body">
+									<p>Full list of publications on Google Scholar <a href="https://scholar.google.com/citations?hl=en&user=3VspJzMAAAAJ&view_op=list_works&sortby=pubdate"><i class="fas fa-sign-in-alt"></i></a>, DBLP <a href="https://dblp.uni-trier.de/pers/hd/p/Phung:Phu_H="><i class="fas fa-sign-in-alt"></i></a>, Scopus <a href="https://www.scopus.com/authid/detail.uri?authorId=24829909900"><i class="fas fa-sign-in-alt"></i></a> </p>
+								</div>
+							</div>
+						</div><!-- pannel-->
+
+
+					</div>
+				</div><!--- END COL -->
+			</div><!--- END ROW -->
+
+		</div>
+	</div>
+
+	<div class="container py-md-3"><a id="people"></a>
+		<div class="heading">
+			<h3 class="head text-left">People</h3>
+			<p class="my-3  text-Left"> The lab was founded and directed by Dr. Phu H. Phung, Assistant Professor in the Department of Computer Science at the University of Dayton. See his homepage at <a href="http://academic.udayton.edu/PhuPhung">http://academic.udayton.edu/PhuPhung</a>, or <a href="https://www.linkedin.com/in/phungphu/" class="signin mr-1">Linked<i class="fab fa-linkedin"></i></a>.
+			</p>
+			<h4 class="head text-left">Graduate Students</h4>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							
+							<div class="my-3"><a href="images/Rakesh.jpeg"><img src="images/Rakesh.jpeg" width="30" style="border-radius: 50%" /></a> Rakesh S.V. Reddy, MSc Thesis, 2018-2019, <a href="https://www.linkedin.com/in/rakesh-venkataramareddy/" class="signin mr-1">Linked<i class="fab fa-linkedin"></i></a></div>
+					
+							<div class="my-3"><a href="images/Praveen.jpeg"><img src="images/Praveen.jpeg" width="30" style="border-radius: 50%" /></a> Panchakshari (Praveen) Hiremath, MSc Thesis, 2018-2020, <a href="https://www.linkedin.com/in/panchakshari-hiremath/" class="signin mr-1">Linked<i class="fab fa-linkedin"></i></a></div>
+
+							<div class="my-3"><a href="images/Akshai.jpeg"><img src="images/Akshai.jpeg" width="30" style="border-radius: 50%" /></a> Akshai Addaguduru, MSc Thesis, 2018-2020, <a href="https://www.linkedin.com/in/akshai-addaguduru/" class="signin mr-1">Linked<i class="fab fa-linkedin"></i></a></div>
+						</div>
+					</div>
+				</div><!--- END COL -->
+			</div><!--- END ROW -->
+			<h4 class="head text-left">Undergraduate Students</h4>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+		
+							<div class="my-3"><a href=""><img src="images/Profile.png" width="30" style="border-radius: 50%" /></a> Jack Armentrout, Summer Research, 2019, <a href="https://www.linkedin.com/in/jack-armentrout-b47162189/" class="signin mr-1">Linked<i class="fab fa-linkedin"></i></a></div>
+						</div>
+					</div>
+				</div><!--- END COL -->
+			</div><!--- END ROW -->
+
+			<h4 class="head text-left">Visitors</h4>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+		
+							<div class="my-3"><a href=""><img src="images/Profile.png" width="30" style="border-radius: 50%" /></a> Son Vu, Summer Research, 2019 (Undergraduate Student at Truman State University), <a href="https://www.linkedin.com/in/jack-armentrout-b47162189/" class="signin mr-1">Linked<i class="fab fa-linkedin"></i></a></div>
+						</div>
+					</div>
+				</div><!--- END COL -->
+			</div><!--- END ROW -->
+
+			<h4 class="head text-left">Alumni</h4>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<!-- <div class="my-3"><a href=""><img src="images/Profile.png" width="30" style="border-radius: 50%" /></a> Son Vu, Summer Research, 2019 (Undergraduate Student at Truman State University), <a href="https://www.linkedin.com/in/jack-armentrout-b47162189/" class="signin mr-1">Linked<i class="fab fa-linkedin"></i></a></div> -->
+						</div>
+					</div>
+				</div><!--- END COL -->
+			</div><!--- END ROW -->
+		</div>
+	</div>
+
+
+	<div class="container py-md-3"><a id="open"></a>
+		<div class="heading">
+			<h3 class="head text-left">Open positions</h3>
+			<p class="my-3  text-Left">There is no funded research assistant positions at the moment, however, the lab is always looking for UD or external students to join our research projects. If you are interested in doing research on the related topics, feel free to contact Dr. Phu Phung for further information. We are also welcome visitors from elsewhere to collaborate in our research activities.
+			</p>
+			<h4 class="head text-left">Some photos of the lab's activities</h4>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							
+							<div class="row">
+								<div class="column">
+								    <a href="labphotos/isseclab-s2019.jpg" target="_blank"><img src="labphotos/isseclab-s2019.jpg" width="220" class="hover-shadow cursor"></a>
+								    <div>In Anderson 135, Spring 2019</div>
+								</div>
+
+								<div class="column">
+								    <a href="labphotos/stander-s2019.jpg" target="_blank"><img src="labphotos/stander-s2019.jpg" width="220" class="hover-shadow cursor"></a>
+								    <div>Stander Symposium, 2019</div>
+								</div>
+
+								<div class="column">
+								    <a href="labphotos/oisc-s2019.jpg" target="_blank"><img src="labphotos/oisc-s2019.jpg" width="220" class="hover-shadow cursor"></a>
+								    <div>OISC 2019</div>
+								</div>
+
+								<div class="column">
+								    <a href="labphotos/rakesh_ssrs_sm2018.jpg" target="_blank"><img src="labphotos/rakesh_ssrs_sm2018.jpg" width="220" class="hover-shadow cursor"></a>
+								    <div>Summer Symposium, 2018</div>
+								</div>
+								  
+							</div>
+						</div>
+					</div>
+				</div><!--- END COL -->
+			</div><!--- END ROW -->
+		</div>
+	</div>
+
+
+	<div class="container py-md-3"><a id="contact"></a>
+		<div class="heading">
+			<h3 class="head text-left">Contact</h3>
+			<div class="row">
+				<div class="col-lg-4 col-md-5 col-6 px-lg-5">
+					<img src="images/UD-logo.png" alt="" class="img-fluid"/>
+				</div>
+				<div class="col-lg-6 offset-lg-2 col-md-7 text-right px-lg-5 mt-md-0 mt-4">
+					<h3 class="my-2">Intelligent Systems Security Lab</h3>
+					Anderson 135 <br>
+					Department of Computer Science  <br>
+					University of Dayton	<br>
+					300 College Park Ave <br>
+					Dayton, OH 45469 <br>
+					Email: phu@udayton[dot]edu <br>
+					Phone: +1 937 229 3831 <br>
+					Web: <a href="https://isseclab-udayton.github.io">https://isseclab-udayton.github.io</a>.
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!-- copyright -->
+<section class="copy-right bg-light py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-9">
+					<p class="">Copyright © Phu H. Phung 2015-2019. Latest Update: June 2019.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- copyright -->
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- //js -->
+	<script>
+	(function($) {
+	'use strict';
+
+		jQuery(document).on('ready', function(){
+
+				$('a.page-scroll').on('click', function(e){
+					var anchor = $(this);
+					$('html, body').stop().animate({
+						scrollTop: $(anchor.attr('href')).offset().top - 50
+					}, 1500);
+					e.preventDefault();
+				});
+
+		});
+
+
+	})(jQuery);
+	</script>
+	<!-- dropdown nav -->
+    <script>
+        $(document).ready(function() {
+            $(".dropdown").hover(
+                function() {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function() {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+
+	<script src="js/smoothscroll.js"></script><!-- Smooth scrolling -->
+	<script src="js/modal.js"></script><!-- Modal -->
 
 
 </body>
-
 </html>
